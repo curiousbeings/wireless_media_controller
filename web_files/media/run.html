@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>VLC CONTROLLER!!!</h1>
+<h3>CHANGE TAB</h3>
+<button type="button" onclick="changetab()">change tab</button><br>
+<h3>VOLUME CONTROL</h3>
+<button type="button" onclick="volumeup()">vol up</button>
+<button type="button" onclick="volumedown()">vol down</button>
+<button type="button" onclick="volumemute()">vol mute</button><br>
+<h3>FULLSCREEN</h3>
+<button type="button" onclick="fullscreen()">fullscreen</button><br>
+<h3>SKIP AHEAD </h3>
+<button type="button" onclick="skip_3seca()">skip 3 secs ahead</button>
+<button type="button" onclick="skip_10seca()">skip 10 sec ahead</button>
+<button type="button" onclick="skip_1mina()">skip 1 min ahead</button>
+<button type="button" onclick="skip_5mina()">skip 5 min ahead</button><br>
+<h3>SKIP BEHIND</h3>
+<button type="button" onclick="skip_3secb()">skip 3 secs behind</button>
+<button type="button" onclick="skip_10secb()">skip 10 sec behind</button>
+<button type="button" onclick="skip_1minb()">skip 1 min behind</button>
+<button type="button" onclick="skip_5minb()">skip 5 min behind</button><br>
+<h3>PLAY/PAUSE</h3>
+<button type="button" onclick="play_pause()">Play/Pause</button>
+<p id="demo"></p>
+
+
+<script>
+function changetab() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+      document.getElementById("demo").innerHTML = this.responseText;
+  };
+  xhttp.open("GET", "http://192.168.0.64:5000/run/change_tab", true);
+  xhttp.send();
+}
+function volumeup() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  };
+  xhttp.open("GET", "http://192.168.0.64:5000/run/vol_up", true);
+  xhttp.send();
+}
+function volumedown() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  };
+  xhttp.open("GET", "http://192.168.0.64:5000/run/vol_down", true);
+  xhttp.send();
+}
+function volumemute() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  };
+  xhttp.open("GET", "http://192.168.0.64:5000/run/vol_mute", true);
+  xhttp.send();
+}
+
+function fullscreen() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+      document.getElementById("demo").innerHTML = this.responseText;
+  };
+  xhttp.open("GET", "http://192.168.0.64:5000/run/fullscreen", true);
+  xhttp.send();
+}
+function skip_3seca() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+      document.getElementById("demo").innerHTML = this.responseText;
+  };
+  xhttp.open("GET", "http://192.168.0.64:5000/run/add_3sec", true);
+  xhttp.send();
+}
+function skip_10seca() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+      document.getElementById("demo").innerHTML = this.responseText;
+  };
+  xhttp.open("GET", "http://192.168.0.64:5000/run/add_10sec", true);
+  xhttp.send();
+}
+function skip_1mina() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+      document.getElementById("demo").innerHTML = this.responseText;
+  };
+  xhttp.open("GET", "http://192.168.0.64:5000/run/add_1min", true);
+  xhttp.send();
+}
+function skip_5mina() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+      document.getElementById("demo").innerHTML = this.responseText;
+  };
+  xhttp.open("GET", "http://192.168.0.64:5000/run/add_5min", true);
+  xhttp.send();
+}
+function skip_3secb() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+      document.getElementById("demo").innerHTML = this.responseText;
+  };
+  xhttp.open("GET", "http://192.168.0.64:5000/run/sub_3sec", true);
+  xhttp.send();
+}
+function skip_10secb() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+      document.getElementById("demo").innerHTML = this.responseText;
+  };
+  xhttp.open("GET", "http://192.168.0.64:5000/run/sub_10sec", true);
+  xhttp.send();
+}
+function skip_1minb() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+      document.getElementById("demo").innerHTML = this.responseText;
+  };
+  xhttp.open("GET", "http://192.168.0.64:5000/run/sub_1min", true);
+  xhttp.send();
+}
+function skip_5minb() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+      document.getElementById("demo").innerHTML = this.responseText;
+  };
+  xhttp.open("GET", "http://192.168.0.64:5000/run/sub_5min", true);
+  xhttp.send();
+}
+function play_pause() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+      document.getElementById("demo").innerHTML = this.responseText;
+  };
+  xhttp.open("GET", "http://192.168.0.64:5000/run/play_pausef", true);
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
