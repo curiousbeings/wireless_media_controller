@@ -43,4 +43,3 @@ def keyboard(key):
 	if key=="press_a":
 		pyautogui.press("a")
 	return "hey"
-	return "hey"
