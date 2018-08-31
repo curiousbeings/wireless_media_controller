@@ -16,7 +16,7 @@ Setting up the App:
   - paste mediaapp.py into {ENV}(Note: {ENV} is the name of your virtual env)
   
 2. Run the Flask server
-  -from the activated environment run the command:"set FLASK_APP=0.0.0.0 && flask run --host=0.0.0.0 --port=5000"
+  -from the activated environment run the command:"set FLASK_APP=flask_app.py && flask run --host=0.0.0.0 --port=5000"
   
   
 3. Install Xampp from https://www.apachefriends.org/download.html
