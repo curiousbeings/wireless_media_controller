@@ -29,75 +29,115 @@
 <script>
 function changetab() {
   var xhttp = new XMLHttpRequest();
- 
+   xhttp.onreadystatechange = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  };
   xhttp.open("GET", "http://192.168.0.64:5000/run/change_tab", true);
   xhttp.send();
 }
 function volumeup() {
   var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  };
   xhttp.open("GET", "http://192.168.0.64:5000/run/vol_up", true);
   xhttp.send();
 }
 function volumedown() {
   var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  };
   xhttp.open("GET", "http://192.168.0.64:5000/run/vol_down", true);
   xhttp.send();
 }
 function volumemute() {
-  var xhttp = new XMLHttpRequest(); 
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  };
   xhttp.open("GET", "http://192.168.0.64:5000/run/vol_mute", true);
   xhttp.send();
 }
 
 function fullscreen() {
   var xhttp = new XMLHttpRequest();
+   xhttp.onreadystatechange = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  };
   xhttp.open("GET", "http://192.168.0.64:5000/run/fullscreen", true);
   xhttp.send();
 }
 function skip_3seca() {
   var xhttp = new XMLHttpRequest();
+   xhttp.onreadystatechange = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  };
   xhttp.open("GET", "http://192.168.0.64:5000/run/add_3sec", true);
   xhttp.send();
 }
 function skip_10seca() {
   var xhttp = new XMLHttpRequest();
- 
+   xhttp.onreadystatechange = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  };
   xhttp.open("GET", "http://192.168.0.64:5000/run/add_10sec", true);
   xhttp.send();
 }
 function skip_1mina() {
   var xhttp = new XMLHttpRequest();
+   xhttp.onreadystatechange = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  };
   xhttp.open("GET", "http://192.168.0.64:5000/run/add_1min", true);
   xhttp.send();
 }
 function skip_5mina() {
   var xhttp = new XMLHttpRequest();
+   xhttp.onreadystatechange = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  };
   xhttp.open("GET", "http://192.168.0.64:5000/run/add_5min", true);
   xhttp.send();
 }
 function skip_3secb() {
   var xhttp = new XMLHttpRequest();
+   xhttp.onreadystatechange = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  };
   xhttp.open("GET", "http://192.168.0.64:5000/run/sub_3sec", true);
   xhttp.send();
 }
 function skip_10secb() {
   var xhttp = new XMLHttpRequest();
+   xhttp.onreadystatechange = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  };
   xhttp.open("GET", "http://192.168.0.64:5000/run/sub_10sec", true);
   xhttp.send();
 }
 function skip_1minb() {
   var xhttp = new XMLHttpRequest();
+   xhttp.onreadystatechange = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  };
   xhttp.open("GET", "http://192.168.0.64:5000/run/sub_1min", true);
   xhttp.send();
 }
 function skip_5minb() {
   var xhttp = new XMLHttpRequest();
+   xhttp.onreadystatechange = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  };
   xhttp.open("GET", "http://192.168.0.64:5000/run/sub_5min", true);
   xhttp.send();
 }
 function play_pause() {
   var xhttp = new XMLHttpRequest();
-  xhttp.open("GET", "http://192.168.0.64:5000/run/play_pausef", true);
+   xhttp.onreadystatechange = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  };
+  xhttp.open("GET", "http://192.168.0.64:5000/run/play_pause", true);
   xhttp.send();
 }
 </script>
