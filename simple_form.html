@@ -1,0 +1,22 @@
+<html>
+<body>
+	Square generator(Enter number):
+	<input type=text id="Number"></input>
+	<button id="send_button">THIS BUTTON WORKS!!!WHY??</button>
+	<button id="fake_button">THIS BUTTON DOESN'T WORK!!!WHY???</button>
+<p id="demo"></p>
+
+<!--This is where the script starts-->
+<script>
+send_button.addEventListener("click",loadDoc)	<!-- Adding a listener to the button, call loadDoc() function when button is pressed
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange=function(){				<!--this function runs when the the response is received from the FLASK server, until then this function is not called-->
+	document.getElementById("demo").innerHTML = this.responseText
+  }
+  xhttp.open("GET", "http://127.0.0.1:5000/run/"+document.getElementById("Number").value, true);<!--Starting a request by declaring it as GET and giving the url of Flask server-->
+  xhttp.send();<!--send the get request and wait for response
+}
+</script>
+</body>
+</html>
